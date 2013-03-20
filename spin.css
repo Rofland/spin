@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.canvas {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+[spin=vgrid] [spin=lane] {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	height: 100%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript" src="../spin.js"></script>
+<link rel='stylesheet' type='text/css' href='../spin.css'></link>
+<title>Test [Layout] VGrid</title>
+</head>
+<body
+	style='display: block; position: relative; width: 50%; height: 100px; border: 1px dashed'>
+</body>
+<script type="text/javascript">
+	_vgrid = new spin.VGrid();
+	$(document.body).append(_vgrid.$e);
+	_lane = _vgrid.create();
+	$e = $("<div class='canvas' style='background: red'>Lane 1</div>");
+	_lane.content($e);
+	_lane = _vgrid.create();
+	$e = $("<div class='canvas' style='background: yellow'>Lane 2. If you see this, there is some bug!</div>")
+	_lane.content($e);
+	_lane2 = _lane;
+	_lane = _vgrid.create();
+	$e = $("<div class='canvas' style='background: grey'>This is Lane 3. Lane 2 should have been removed!</div>")
+	_lane.content($e);
+	_lane2.dispose();
+
+	_vgrid.$e.css({
+		margin : "5px",
+		border : "3px solid"
+	});
+</script>
+</html>
