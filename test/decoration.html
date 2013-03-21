@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='stylesheet' type='text/css' href='../spin.css'></link>
+<title>Standard Decorations</title>
+<style>
+div {
+	display: inline-block;
+}
+
+div.font {
+	width: 120px;
+	height: 2em;
+}
+
+div.box {
+	border: 1px dashed;
+}
+
+div.corner {
+	width: 120px;
+	height: 2em;
+	background: #aaaaff;
+}
+
+div.pad {
+	width: 120px;
+	height: 2em;
+	background: #ffaaaa;
+}
+
+div.margin {
+	width: 120px;
+	height: 2em;
+	background: palegreen;
+}
+
+div.mix {
+	width: 120px;
+	height: 2em;
+	background: #ccaa88;
+}
+
+div.mix.pad_M {
+	background: orange;
+}
+
+div.mix.pad_L {
+	background: red;
+}
+</style>
+</head>
+<body>
+	<h3>Font</h3>
+	<div class='font small'>Small</div>
+	<div class='font'>Default</div>
+	<div class='font large'>Large</div>
+	<div class='font xlarge'>Extra</div>
+	<br />
+	<div class='font bold small'>Small</div>
+	<div class='font bold'>Default</div>
+	<div class='font bold large'>Large</div>
+	<div class='font bold xlarge'>Extra</div>
+
+	<h3>Corner</h3>
+	<div class='corner'>none</div>
+	<div class='corner corner_S'>small</div>
+	<div class='corner corner_M'>middle</div>
+	<div class='corner corner_L'>large</div>
+	<h3>Padding</h3>
+	<div class='pad'>none</div>
+	<div class='pad pad_S'>small</div>
+	<div class='pad pad_M'>middle</div>
+	<div class='pad pad_L'>large</div>
+	<h3>Margin</h3>
+	<div class='box'>
+		<div class='margin'>none</div>
+	</div>
+	<div class='box'>
+		<div class='margin margin_S'>small</div>
+	</div>
+	<div class='box'>
+		<div class='margin margin_M'>middle</div>
+	</div>
+	<div class='box'>
+		<div class='margin margin_L'>large</div>
+	</div>
+
+	<h3>Mix & Match (Corner / Padding / Margin)</h3>
+	<p>
+	<div class='box'>
+		<div class='mix pad_S margin_S'>N/S/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_S margin_M'>N/S/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_S margin_L'>N/S/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_M margin_S'>N/M/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_M margin_M'>N/M/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_M margin_L'>N/M/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_L margin_S'>N/L/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_L margin_M'>N/L/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix pad_L margin_L'>N/L/L</div>
+	</div>
+	<p>
+	<div class='box'>
+		<div class='mix corner_S pad_S margin_S'>S/S/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_S margin_M'>S/S/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_S margin_L'>S/S/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_M margin_S'>S/M/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_M margin_M'>S/M/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_M margin_L'>S/M/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_L margin_S'>S/L/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_L margin_M'>S/L/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_S pad_L margin_L'>S/L/L</div>
+	</div>
+	<p>
+	<div class='box'>
+		<div class='mix corner_M pad_S margin_S'>M/S/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_S margin_M'>M/S/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_S margin_L'>M/S/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_M margin_S'>M/M/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_M margin_M'>M/M/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_M margin_L'>M/M/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_L margin_S'>M/L/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_L margin_M'>M/L/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_M pad_L margin_L'>M/L/L</div>
+	</div>
+	<p>
+	<div class='box'>
+		<div class='mix corner_L pad_S margin_S'>L/S/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_S margin_M'>L/S/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_S margin_L'>L/S/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_M margin_S'>L/M/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_M margin_M'>L/M/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_M margin_L'>L/M/L</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_L margin_S'>L/L/S</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_L margin_M'>L/L/M</div>
+	</div>
+	<div class='box'>
+		<div class='mix corner_L pad_L margin_L'>L/L/L</div>
+	</div>
+</body>
+</html>
